@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title></title>
+
+  <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+</head>
+
+<body style='width:200px'>
+
+  <form action="" id="contactForm" method="post" name="ContactForm">
+
+    <span id="contactExit"></span>
+
+    <input class="contact-main" maxlength="30" name="name" onblur="if (this.value=='') this.value='Name';" onfocus="if (this.value=='Name') this.value='';" type="text" value="Name">
+    <input class="contact-main" maxlength="40" name="email" onblur="if (this.value=='') this.value='Email';" onfocus="if (this.value=='Email') this.value='';" type="text" value="Email">
+    <input class="contact-main" maxlength="100" name="subject" onblur="if (this.value=='') this.value='Subject';" onfocus="if (this.value=='Subject') this.value='';" type="text" value="Subject">
+    <textarea class="contact-main" style="margin-top: 0em" name="message" onblur="if (this.value=='') this.value='Message';" onfocus="if (this.value=='Message') this.value='';">Message</textarea>
+    <div id="message_post">&nbsp;</div>
+    <input id="submitf" name="submitf" type="submit" value="Submit">
+    <input id="reset" name="reset" type="reset" value="Reset">
+    <div style="clear:both"></div>
+  </form>
+
+  <script type="text/javascript" src="email.js"></script>
+</body>
+
+</html>
